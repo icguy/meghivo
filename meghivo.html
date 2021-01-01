@@ -63,14 +63,17 @@ important:
 		}
 
 		.postcard {
-			width: 800px;
+			width: 900px;
+			max-height: 600px;
 			display: flex;
 			padding: 4rem;
 			background-color: white;
+			box-sizing: border-box;
 		}
 
 		.postcard-left {
 			flex: 1;
+			overflow: auto;
 		}
 
 		.content-title {
@@ -133,6 +136,33 @@ important:
 			padding: 0 1rem;
 		}
 	</style>
+
+	<!-- mobile styles -->
+	<style type="text/css">
+		@media (max-width:700px) {
+			.postcard {
+				padding: 2rem 3rem;
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				max-height: none;
+			}
+
+			.postcard-left {
+				flex: 1;
+			}
+
+			.postcard-right{
+				flex: none;
+				min-height: auto;
+			}
+
+			.divider, .stamp {
+				display: none;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -142,7 +172,7 @@ important:
 				This is bacon ipsum
 			</div>
 			<div class="content-body text">
-				Bacon ipsum dolor amet filet mignon boudin sirloin kielbasa ribeye ham hock short ribs buffalo beef pancetta. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank.
+				Bacon ipsum dolor amet filet mignon boudin sirloin kielbasa ribeye ham hock short ribs buffalo beef pancetta. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank.
 			</div>
 			<div class="content-signature font-playfair">
 				Dani &amp; Eszter
