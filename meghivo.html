@@ -1,0 +1,168 @@
+<!-- 
+
+page angèle by amboise n.n
+
+important:
+
+    - i left one too many notes on this code so it may look disorganized and even unfinished but it's all for the sake of helping you.
+
+    - i wouldn't recommend changing sizes of any kind (only font size) so if you really want to do it i won't provide you help with it.
+
+    - responsiveness cannot be removed.
+
+    - make sure you follow the terms of use.
+
+
+-->
+<!DOCTYPE html>
+
+<head>
+
+	<!-- TODO CHANGE THIS -->
+	<title>Dániel és Esztörke</title> <!-- window title -->
+
+	<link rel="shortcut icon" href="{favicon}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- font -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- css customization -->
+
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			font-family: 'Karla', sans-serif;
+			color: #964f59;
+		}
+
+		body {
+			/* background-image: url("https://www.schladming-dachstein.at/A-Z_Liste/Haus-Aich-Goessenberg/Ausflugsziele/Alpaca-Lamawelt%20KLAUSNERHOF/Lama%20und%20Alpaka_%C2%A9Klausnerhof%20%281%29.JPG");
+            background-size: cover;
+            background-position: center; */
+			background-color: #dad8d6;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.font-playfair {
+			font-family: 'Playfair Display', serif;
+		}
+
+		.postcard {
+			width: 800px;
+			display: flex;
+			padding: 4rem;
+			background-color: white;
+		}
+
+		.postcard-left {
+			flex: 1;
+		}
+
+		.content-title {
+			font-size: 2rem;
+			padding-bottom: 2rem;
+			font-weight: bold;
+		}
+
+		.content-body {
+			padding: 1rem 0;
+			line-height: 1.7;
+		}
+
+		.content-signature {
+			font-size: 1.5rem;
+		}
+
+		.divider {
+			width: 3px;
+			/* height: 100%; */
+			background-color: #964f59;
+			margin: 0 4rem;
+		}
+
+		.postcard-right {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			min-height: 400px;
+		}
+
+		.stamp {
+			height: 150px;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.stamp img {
+			height: 100%;
+		}
+
+		.passage {
+			text-align: center;
+		}
+
+		.passage-body {
+			font-size: 1.3rem;
+			font-weight: bold;
+			margin-bottom: .5rem;
+		}
+
+		.menu {
+			text-transform: uppercase;
+			display: flex;
+			justify-content: center;
+		}
+
+		.menu * {
+			padding: 0 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="postcard">
+		<div class="postcard-left">
+			<div class="content-title font-playfair">
+				This is bacon ipsum
+			</div>
+			<div class="content-body text">
+				Bacon ipsum dolor amet filet mignon boudin sirloin kielbasa ribeye ham hock short ribs buffalo beef pancetta. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank.
+			</div>
+			<div class="content-signature font-playfair">
+				Dani &amp; Eszter
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="postcard-right">
+			<div class="stamp">
+				<img src="https://www.veszpzoo.hu/assets/uploads/allatimg/lama2_20160616145139.jpg">
+			</div>
+			<div class="passage text">
+				<div class="passage-body font-playfair">Gyermekeim, ne szóval szeressünk, ne is nyelvvel, hanem cselekedettel és igazsággal.</div>
+				<div class="passage-source">1JÁNOS 3:18</div>
+			</div>
+			<div class="menu font-playfair">
+				<a href="">Üzenet</a>
+				<a href="">Video</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
