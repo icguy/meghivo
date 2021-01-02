@@ -1,25 +1,8 @@
-<!-- 
-
-page angèle by amboise n.n
-
-important:
-
-    - i left one too many notes on this code so it may look disorganized and even unfinished but it's all for the sake of helping you.
-
-    - i wouldn't recommend changing sizes of any kind (only font size) so if you really want to do it i won't provide you help with it.
-
-    - responsiveness cannot be removed.
-
-    - make sure you follow the terms of use.
-
-
--->
 <!DOCTYPE html>
 
 <head>
 
-	<!-- TODO CHANGE THIS -->
-	<title>Dániel és Esztörke</title> <!-- window title -->
+	<title>Dani és Eszter esküsznek!</title> <!-- window title -->
 
 	<link rel="shortcut icon" href="{favicon}">
 
@@ -41,13 +24,14 @@ important:
 			margin: 0;
 			font-family: 'Karla', sans-serif;
 			color: #964f59;
+			letter-spacing: 0.05rem;
 		}
 
 		body {
 			/* background-image: url("https://www.schladming-dachstein.at/A-Z_Liste/Haus-Aich-Goessenberg/Ausflugsziele/Alpaca-Lamawelt%20KLAUSNERHOF/Lama%20und%20Alpaka_%C2%A9Klausnerhof%20%281%29.JPG");
             background-size: cover;
             background-position: center; */
-			background-color: #dad8d6;
+			background-color: #d9d8d6;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -67,7 +51,7 @@ important:
 			max-height: 600px;
 			display: flex;
 			padding: 4rem;
-			background-color: white;
+			background-color: #f0f1f5;
 			box-sizing: border-box;
 		}
 
@@ -79,22 +63,26 @@ important:
 		}
 
 		.content-title {
-			font-size: 2rem;
-			padding-bottom: 2rem;
+			font-size: 1.7rem;
 			font-weight: bold;
 		}
 
 		.content-body {
 			padding: 1rem 0;
 			line-height: 1.7;
+			font-size: .9rem;
+		}
+
+		.content-body>* {
+			padding-bottom: .5rem;
 		}
 
 		.content-signature {
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 		}
 
 		.divider {
-			width: 3px;
+			width: 2px;
 			/* height: 100%; */
 			background-color: #964f59;
 		}
@@ -109,21 +97,27 @@ important:
 		}
 
 		.stamp {
-			height: 150px;
 			display: flex;
 			justify-content: flex-end;
 		}
 
 		.stamp img {
 			height: 100%;
+			position: relative;
+			top: -1rem;
+			right: -1rem;
 		}
 
 		.passage {
 			text-align: center;
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
 		}
 
 		.passage-body {
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 			font-weight: bold;
 			margin-bottom: .5rem;
 		}
@@ -195,16 +189,33 @@ important:
 			}
 		}
 	</style>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+	<script>
+		$(() => {
+			let mail = "ayhanagoston@gmail.com";
+			$("#contactlink").attr("href", "mailto:" + mail).text(mail);
+		});
+	</script>
 </head>
 
 <body>
 	<div class="pc">
 		<div class="pc-left">
 			<div class="content-title font-playfair">
-				This is bacon ipsum
+				Kedves Barátunk!
 			</div>
 			<div class="content-body text">
-				Bacon ipsum dolor amet filet mignon boudin sirloin kielbasa ribeye ham hock short ribs buffalo beef pancetta. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank. Ham kielbasa tongue landjaeger, fatback filet mignon ball tip. Turkey tongue alcatra ribeye prosciutto. Landjaeger tenderloin andouille cow prosciutto. Shoulder boudin shankle meatloaf, tail t-bone short ribs tongue chuck tri-tip turducken pastrami flank.
+				<div>
+					Elhatároztuk, hogy nem várunk tovább, és <b>2021. január 23-án 16:00-kor</b> összeházasodunk. Sajnos nem tudunk mindenkivel személyesen ünnepelni, akivel szeretnénk, ezért szeretettel hívunk esküvőnk online közvetítésére. A linket ezen az oldalon fogjuk megosztani.
+				</div>
+				<div>
+					Ha szeretnél üzenni nekünk, azt megteheted az <b><a id="contactlink"></a></b> e-mail címen.
+				</div>
+				<div>
+					Reméljük, ott tudsz lenni :)
+				</div>
 			</div>
 			<div class="content-signature font-playfair">
 				Dani &amp; Eszter
@@ -216,13 +227,13 @@ important:
 				<img src="stamp.png">
 			</div>
 			<div class="passage text">
-				<div class="passage-body font-playfair">Gyermekeim, ne szóval szeressünk, ne is nyelvvel, hanem cselekedettel és igazsággal.</div>
+				<div class="passage-body font-playfair">Gyermekeim, ne szóval szeressünk, ne is nyelvvel,<br>hanem cselekedettel és igazsággal.</div>
 				<div class="passage-source">1JÁNOS 3:18</div>
 			</div>
-			<div class="menu font-playfair">
+			<!-- <div class="menu font-playfair">
 				<a href="">Üzenet</a>
 				<a href="">Video</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </body>
