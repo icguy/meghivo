@@ -44,17 +44,8 @@ $(() => {
 				type: 'POST',
 				url: 'https://docs.google.com/forms/d/e/1FAIpQLSc49eQ3VgCLq70yVUlb-iYH9GdzvkiKFRpaasT_Y7Nm00gKoQ/formResponse',
 				data: data,
-				contentType: 'application/json',
 				dataType: 'jsonp',
-				error: (err) => {
-					if (err.status !== 200) {
-						alert("Valami nem sikerült :(");
-					}
-					else {
-						successCallback();
-					}
-				},
-				success: () => successCallback()
+				complete: () => successCallback()
 			})
 		});
 

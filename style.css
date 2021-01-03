@@ -83,6 +83,22 @@ button {
     padding-bottom: .3rem;
 }
 
+.control {
+    padding: .375rem .75rem;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #964f59;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+}
+
 .button-container {
     padding-top: 1rem;
     display: flex;
